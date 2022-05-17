@@ -1,0 +1,82 @@
+# Approach based on: 
+# https://www.billerickson.net/code/sample-gitignore/
+# https://moshen.net/posts/use-a-whitelist/
+# https://gist.github.com/jamiebergen/91a49b3c3e648031619178050122d90f
+
+# ==============================================
+# Ignore all files added by Local by Flywheel...
+# ...except for our WordPress theme
+# ==============================================
+
+app/**
+conf/**
+logs/**
+!app/public/
+app/public/**
+!app/public/*.png
+!app/public/favicon.ico
+!app/public/browserconfig.xml
+!app/public/site.webmanifest
+!app/public/safari-pinned-tab.svg
+!app/public/wp-content/
+app/public/wp-content/**
+!app/public/wp-content/themes/
+app/public/wp-content/themes/**
+!app/public/wp-content/themes/orangepop/
+!app/public/wp-content/themes/orangepop/**
+!app/public/wp-content/plugins/
+app/public/wp-content/plugins/**
+!app/public/wp-content/plugins/classic-editor-custom/
+!app/public/wp-content/plugins/classic-editor-custom/**
+
+# ==============================================
+# OS-specific Stuff
+# ==============================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+*[Tt]humbs.db
+*.Trashes
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+## (Icon must end with two \r)
+Icon
+
+## (Thumbnails)
+._*
+
+# ==============================================
+# Web stuff
+# ==============================================
+
+*.log
+node_modules
+*.tmp
+*.bak
+.sass-cache
+sitemap.*
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+
+# ==============================================
+# IDEs & Other Software
+# ==============================================
+
+/.vscode
+/.nova
+config.codekit
+config.codekit3

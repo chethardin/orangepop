@@ -1,0 +1,32 @@
+
+/* ===============================================
+
+	Orange Pop Styles
+
+	I try not to overwrite Gutenberg styles, but in the below instances, I couldn't figure out any other way to handle it. 
+
+=============================================== */
+
+
+
+/* ===============================================
+	Media 
+=============================================== */
+
+/* .wp-block-image has no margin top, which breaks the vertical spacing when the image is inline. The solution I found was to put the image block inside of a group, but that removes the ability to apply full-width alignment to the image. */
+.entry-content .wp-block-image:not(:first-child) {
+	margin-top: var( --wp--style--block-gap );
+}
+
+
+/* ===============================================
+	A11y
+=============================================== */
+.sr-only {
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
